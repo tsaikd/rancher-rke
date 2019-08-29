@@ -213,6 +213,12 @@ github.com/stretchr/testify v1.3.0 h1:TivCn/peBQ7UY8ooIcPgZFpTNSz0Q2U6UrFlUfqbe0
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5 h1:LnC5Kc/wtumK+WB441p7ynQJzVuNRJiqddSIE3IlSEQ=
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190829090114-8d2009537e16 h1:bcOOeE2TBnWRL7EMpNve3hIMP7BVjTaIJpFF9y/AbXM=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190829090114-8d2009537e16/go.mod h1:dHvhyuoiwrjqQCFD586g0cZ9NJJXEKeAtQi8RX96U8E=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190830004337-7894b64a60c2 h1:EXjGx+D+n263i9qO4rtrheoeeOpbQN1Em7snJU5wyTM=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190830004337-7894b64a60c2/go.mod h1:dHvhyuoiwrjqQCFD586g0cZ9NJJXEKeAtQi8RX96U8E=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190908154445-e3c3559c97fa h1:23v72M4mOHee+aN79GCZKghoZ7NVsMwtl71HYpkgKJA=
+github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190908154445-e3c3559c97fa/go.mod h1:dHvhyuoiwrjqQCFD586g0cZ9NJJXEKeAtQi8RX96U8E=
 github.com/ugorji/go v0.0.0-20171231121548-ccfe18359b55 h1:1IR8KZO9eYKhBHbeUWCb10PVIr7dAcglEhe43mEmInQ=
 github.com/ugorji/go v0.0.0-20171231121548-ccfe18359b55/go.mod h1:hnLbHMwcvSihnDhEfx2/BzKp2xb0Y+ErdfYcrs9tkJQ=
 github.com/urfave/cli v1.18.0 h1:m9MfmZWX7bwr9kUcs/Asr95j0IVXzGNNc+/5ku2m26Q=
