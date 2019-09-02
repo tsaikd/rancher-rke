@@ -154,6 +154,12 @@ func ParseConfig(clusterFile string) (*v3.RancherKubernetesEngineConfig, error) 
 	if err := yaml.Unmarshal([]byte(clusterFile), &rkeConfig); err != nil {
 		return nil, err
 	}
+	if rkeConfig.RKEClient.DockerDialerTimeoutSecond < 1 {
+		rkeConfig.RKEClient.DockerDialerTimeoutSecond = 50
+	}
+	if rkeConfig.RKEClient.ReconcileHostRetry < 1 {
+		rkeConfig.RKEClient.ReconcileHostRetry = 3
+	}
 	return &rkeConfig, nil
 }
 

@@ -219,6 +219,8 @@ github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190830004337-7894b64a60c2 h
 github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190830004337-7894b64a60c2/go.mod h1:dHvhyuoiwrjqQCFD586g0cZ9NJJXEKeAtQi8RX96U8E=
 github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190908154445-e3c3559c97fa h1:23v72M4mOHee+aN79GCZKghoZ7NVsMwtl71HYpkgKJA=
 github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190908154445-e3c3559c97fa/go.mod h1:dHvhyuoiwrjqQCFD586g0cZ9NJJXEKeAtQi8RX96U8E=
+github.com/tsaikd/rancher-types v0.0.0-20190902001712-0d2dd5f231ff h1:XJDGq4bXa5mfNlY95Ga2xRTTDFdBxDqvz5vjKjc/Phw=
+github.com/tsaikd/rancher-types v0.0.0-20190902001712-0d2dd5f231ff/go.mod h1:9L7VLTwNVt7vJYwP/7xrQ4tWghDQ+zl9//RTqRjGxes=
 github.com/ugorji/go v0.0.0-20171231121548-ccfe18359b55 h1:1IR8KZO9eYKhBHbeUWCb10PVIr7dAcglEhe43mEmInQ=
 github.com/ugorji/go v0.0.0-20171231121548-ccfe18359b55/go.mod h1:hnLbHMwcvSihnDhEfx2/BzKp2xb0Y+ErdfYcrs9tkJQ=
 github.com/urfave/cli v1.18.0 h1:m9MfmZWX7bwr9kUcs/Asr95j0IVXzGNNc+/5ku2m26Q=

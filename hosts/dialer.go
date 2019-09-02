@@ -12,7 +12,7 @@ import (
 	"golang.org/x/crypto/ssh"
 )
 
-const (
+var (
 	DockerDialerTimeout = 50
 )
 
@@ -186,8 +186,9 @@ func (h *Host) newHTTPClient(dialerFactory DialerFactory) (*http.Client, error) 
 	if err != nil {
 		return nil, err
 	}
-	dockerDialerTimeout := time.Second * DockerDialerTimeout
+	dockerDialerTimeout := time.Second * time.Duration(DockerDialerTimeout)
 	return &http.Client{
+		Timeout: dockerDialerTimeout,
 		Transport: &http.Transport{
 			Dial:                  dialer,
 			TLSHandshakeTimeout:   dockerDialerTimeout,

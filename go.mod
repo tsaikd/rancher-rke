@@ -6,6 +6,8 @@ replace github.com/go-resty/resty => gopkg.in/resty.v1 v1.9.0
 
 replace github.com/rancher/kontainer-driver-metadata => github.com/tsaikd/kontainer-driver-metadata v0.0.0-20190908154445-e3c3559c97fa
 
+replace github.com/rancher/types => github.com/tsaikd/rancher-types v0.0.0-20190902001712-0d2dd5f231ff
+
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/Microsoft/go-winio v0.0.0-20180501170546-ab35fc04b636 // indirect

@@ -27,6 +27,10 @@ const (
 	EtcdPlaneNodesReplacedErr = "Etcd plane nodes are replaced. Stopping provisioning. Please restore your cluster from backup."
 )
 
+var (
+	ReconcileRetry = 3
+)
+
 func ReconcileCluster(ctx context.Context, kubeCluster, currentCluster *Cluster, flags ExternalFlags, svcOptions *v3.KubernetesServicesOptions) error {
 	logrus.Debugf("[reconcile] currentCluster: %+v\n", currentCluster)
 	log.Infof(ctx, "[reconcile] Reconciling cluster state")
@@ -136,9 +140,8 @@ func reconcileControl(ctx context.Context, currentCluster, kubeCluster *Cluster,
 
 func reconcileHost(ctx context.Context, toDeleteHost *hosts.Host, worker, etcd bool, cleanerImage string, dialerFactory hosts.DialerFactory, prsMap map[string]v3.PrivateRegistry, clusterPrefixPath string, clusterVersion string) error {
 	var retryErr error
-	retries := 3
 	sleepSeconds := 3
-	for i := 0; i < retries; i++ {
+	for i := 0; i < ReconcileRetry; i++ {
 		if retryErr = toDeleteHost.TunnelUp(ctx, dialerFactory, clusterPrefixPath, clusterVersion); retryErr != nil {
 			logrus.Debugf("Failed to dial the host %s trying again in %d seconds", toDeleteHost.Address, sleepSeconds)
 			time.Sleep(time.Second * time.Duration(sleepSeconds))

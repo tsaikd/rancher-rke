@@ -224,6 +224,8 @@ func clusterUpFromCli(ctx *cli.Context) error {
 	if err != nil {
 		return fmt.Errorf("Failed to parse cluster file: %v", err)
 	}
+	hosts.DockerDialerTimeout = rkeConfig.RKEClient.DockerDialerTimeoutSecond
+	cluster.ReconcileRetry = rkeConfig.RKEClient.ReconcileHostRetry
 
 	rkeConfig, err = setOptionsFromCLI(ctx, rkeConfig)
 	if err != nil {
